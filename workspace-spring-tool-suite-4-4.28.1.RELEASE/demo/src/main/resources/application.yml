@@ -16,8 +16,8 @@ spring:
    imap:
     host: imap.example.com
     port: 993
-    username: bm714395@gmail.com
-    password: qhalalswn0155#
+    username: 
+    password: 
    properties:
     mail:
     store:
