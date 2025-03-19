@@ -1,0 +1,46 @@
+mybatis:
+  # MyBatis 설정
+  mapper-locations: classpath:mapper/*.xml  
+  type-aliases-package: com.example.demo.model 
+  map-underscore-to-camel-case: true
+
+spring:
+  datasource:
+    # 데이터베이스 연결 정보
+    url: jdbc:mysql://127.0.0.1:3306/demo
+    username: demo
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  mail:
+   imap:
+    host: imap.example.com
+    port: 993
+    username: bm714395@gmail.com
+    password: qhalalswn0155#
+   properties:
+    mail:
+    store:
+     protocol: imaps
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # 자동으로 테이블을 생성/업데이트 하도록 설정 (개발 환경에서만 사용)
+      show-sql: true  # SQL 쿼리 출력 (디버깅용)
+      database-platform: org.hibernate.dialect.MySQL5InnoDBDialect  # MySQL의 Hibernate 다이얼렉트 설정
+
+    # Optional: JPA 로그 레벨 설정
+    logging:
+      level:
+        org.hibernate.SQL: DEBUG  # Hibernate SQL 쿼리 로깅
+        org.hibernate.type.descriptor.sql.BasicBinder: TRACE 
+
+  thymeleaf:
+    # Thymeleaf 템플릿 경로
+    prefix: classpath:/templates/
+    suffix: .html  
+
+  logging:
+    # 로깅 레벨 설정
+    level:
+      org.springframework: DEBUG

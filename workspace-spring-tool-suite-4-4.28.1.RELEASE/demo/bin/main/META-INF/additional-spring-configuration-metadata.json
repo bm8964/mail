@@ -1,0 +1,62 @@
+{"properties": [
+  {
+    "name": "spring.jpa.hibernate.show-sql",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jpa.hibernate.show-sql'"
+  },
+  {
+    "name": "spring.jpa.hibernate.database-platform",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jpa.hibernate.database-platform'"
+  },
+  {
+    "name": "spring.jpa.hibernate.logging.level.org.hibernate.-sQL",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jpa.hibernate.logging.level.org.hibernate.-sQL'"
+  },
+  {
+    "name": "spring.jpa.hibernate.logging.level.org.hibernate.type.descriptor.sql.BasicBinder",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jpa.hibernate.logging.level.org.hibernate.type.descriptor.sql.BasicBinder'"
+  },
+  {
+    "name": "mybatis.map-underscore-to-camel-case",
+    "type": "java.lang.String",
+    "description": "A description for 'mybatis.map-underscore-to-camel-case'"
+  },
+  {
+    "name": "spring.mail.imap.host",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.mail.imap.host'"
+  },
+  {
+    "name": "spring.mail.imap.password",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.mail.imap.password'"
+  },
+  {
+    "name": "spring.mail.imap.port",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.mail.imap.port'"
+  },
+  {
+    "name": "spring.mail.imap.username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.mail.imap.username'"
+  },
+  {
+    "name": "spring.jpa.logging.level.org.hibernate.-sQL",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jpa.logging.level.org.hibernate.-sQL'"
+  },
+  {
+    "name": "spring.jpa.logging.level.org.hibernate.type.descriptor.sql.BasicBinder",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jpa.logging.level.org.hibernate.type.descriptor.sql.BasicBinder'"
+  },
+  {
+    "name": "spring.logging.level.org.springframework",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.logging.level.org.springframework'"
+  }
+]}

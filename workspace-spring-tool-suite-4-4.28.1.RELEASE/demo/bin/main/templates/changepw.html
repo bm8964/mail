@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>パスワード変更</title>
+    <link rel="stylesheet" href="css/changepw.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+
+   <div th:replace="header :: header"></div>
+    <!-- 진한 주황색 배경 박스 -->
+    <div class="login-box-background"></div>
+
+    <!-- 연한 주황색 로그인 박스 -->
+    <div class="login-container">
+        <h2>パスワード変更</h2>
+        <form action="/changepw" method="POST">
+        
+        　　 <div class="textbox">
+                <a>名前</a>
+                <input type="text" id="name" name="name"  placeholder="name" >
+            </div>
+            
+            <div class="textbox">
+                <a>ID</a>
+                <input type="text" id="id" name="id"  placeholder="ID" >
+            </div>
+            
+            <div class="textbox">
+            <a>Password</a>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            
+             <div class="textbox">
+            <a>Password(再)</a>
+                <input type="password" id="confirmpw" name="confirmpw" placeholder="Password" required>
+            </div>
+            <div class="button-container">
+            <input class="btn-login" type="submit" value="変更">
+            <input class="btn-login" type="submit" value="戻る">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

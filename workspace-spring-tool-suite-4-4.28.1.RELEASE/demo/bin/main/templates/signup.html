@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会員登録</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <!-- 진한 주황색 배경 박스 -->
+    <div class="login-box-background"></div>
+
+    <!-- 연한 주황색 로그인 박스 -->
+    <div class="login-container">
+        <h2>会員登録</h2>
+        <form id="insertUser" action="/insert/user" method="POST">
+        
+        　　 <div class="textbox">
+                <a>名前</a>
+                <input type="text" id="user_Name" name="user_Name"  placeholder="name" required>
+            </div>
+            
+            <div class="textbox">
+                <a>ID</a>
+                <input type="text" id="user_Id" name="user_Id"  placeholder="ID" required>
+            </div>
+            
+            <div class="textbox">
+            <a>Password</a>
+                <input type="user_Password" id="pw" name="user_Password" placeholder="Password" required>
+            </div>
+            
+            <div>
+               <a class="login" href="/login">既に会員登録した方はこちらに</a>
+            </div>
+            
+            <input class="btn-login" type="submit" value="会員登録">
+        </form>
+    </div>
+</body>
+</html>

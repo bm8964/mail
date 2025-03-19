@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.dao.EmailDAO">
+<insert id="saveEmail" parameterType="com.example.demo.model.Email_table">
+    INSERT INTO email_table (
+        email_Id
+     	account_Id, 
+     	sender, 
+     	receiver, 
+     	subject, 
+     	email_content, 
+     	email_date
+     	)VALUES (
+     	#{email_Id}, 
+     	#{account_Id}, 
+     	#{sender}, 
+     	#{receiver}, 
+     	#{subject}, 
+     	#{email_content}, 
+     	#{email_date})
+</insert>
+
+
+
+</mapper>

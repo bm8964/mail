@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>送信箱</title>
+    <link rel="stylesheet" href="css/sender.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+
+   <div th:replace="header :: header"></div>
+
+    <div class="mailbox">
+        <h1>送信項目</h1>
+
+        <!-- 검색 바 (왼쪽) + 버튼들 (오른쪽) -->
+        <div class="toolbar">
+            <!-- 검색 바 영역 -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="メール検索" class="search-bar">
+                <button class="search-btn">検索</button>
+            </div>
+
+            <!-- 필터링, 메일 작성, 삭제 버튼 -->
+            <div class="actions">
+                <button class="filter-btn" id="filterBtn">フィルタリング</button>
+                <!-- 모달 창 -->
+                <div class="modal" id="filterModal">
+                    <div class="modal-content">
+                        <span class="close-btn" id="closeModal">&times;</span>
+                        <h2>フィルタリングオプション</h2>
+
+                        <!-- 필터링 폼 -->
+                        <form id="filterForm">
+                            <label for="label">ラベル名:</label>
+                            <input type="text" id="label" name="label" placeholder="ラベル名">
+                            
+                            <label for="recipient">受信者:</label>
+                            <input type="text" id="recipient" name="recipient" placeholder="受信者名">
+
+                            <label for="sender">発信者:</label>
+                            <input type="text" id="sender" name="sender" placeholder="発信者名">
+
+                            <label for="includeWords">含まれる単語:</label>
+                            <input type="text" id="includeWords" name="includeWords" placeholder="含まれる単語">
+
+                            <label for="excludeWords">含まれない単語:</label>
+                            <input type="text" id="excludeWords" name="excludeWords" placeholder="含まれない単語">
+
+                            <button type="submit" class="apply-btn">適用</button>
+                        </form>
+                    </div>
+                </div>
+                <button class="compose-btn" onclick="location.href='/mail'">メール作成</button>
+
+
+                <button class="delete-btn" id="deleteBtn" disabled>削除</button>
+            </div>
+        </div>
+
+        <!-- 메일 목록 테이블 -->
+        <table>
+            <thead>
+                <tr>
+                    <th><input type="checkbox" id="selectAll" onclick="toggleSelectAll()"></th> <!-- 전체 선택 체크박스 -->
+                    <th>件名</th>
+                    <th>日付</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" class="mailCheckbox"></td>
+                    <td><a href="#">今日の</a></td>
+                    <td>2025-03-10</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="mailCheckbox"></td>
+                    <td><a href="#">昨日の</a></td>
+                    <td>2025-03-09</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="mailCheckbox"></td>
+                    <td><a href="#">一昨日の</a></td>
+                    <td>2025-03-08</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/sender.js"></script>
+</body>
+</html>

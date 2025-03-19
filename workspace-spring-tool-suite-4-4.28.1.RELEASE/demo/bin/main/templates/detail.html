@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メール詳細</title>
+    <link rel="stylesheet" href="css/detail.css">
+</head>
+<body>
+    <div class="mail-detail-container">
+        <!-- 상단 바 (목록으로 가기 버튼 & 검색) -->
+        <div class="top-bar">
+            <button class="back-to-list-btn">項目へ</button>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="メール検索" class="search-bar">
+                <button class="search-btn">検索</button>
+            </div>
+        </div>
+
+        <!-- 메일 상세보기 컨텐츠 -->
+        <div class="mail-detail">
+            <h1 class="mail-title">件名</h1>
+            <div class="mail-info">
+                <p><strong>送信者:</strong> sender@example.com</p>
+                <p><strong>受信者:</strong> receiver@example.com</p>
+            </div>
+            <div class="mail-content">
+                <p>○○の件で連絡いたします。</p>
+                <p>ご確認よろしくお願いいたします。</p>
+                <p>坂本 太郎</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

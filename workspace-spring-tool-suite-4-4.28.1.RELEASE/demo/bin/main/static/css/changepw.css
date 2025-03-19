@@ -1,0 +1,135 @@
+/* Body 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; /* 화면을 세로로 정렬 */
+    justify-content: flex-start; /* 상단에 정렬 */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 0;
+}
+
+/* 로그인 박스 스타일 (뒤쪽 진한 주황색 상자) */
+.login-box-background {
+    background-color: #f8ac74; /* 진한 주황색 */
+    padding: 20px;
+    border-radius: 10px;
+    width: 30px;
+    max-width: 400px;
+    position: absolute; /* 뒤에 겹치도록 절대 위치 */
+    z-index: -1; /* 뒤에 배치 */
+    height: 411px;
+    left: 37.5%; 
+    transform: translateX(-50%); /* 가운데 정렬 */
+    margin-top: 152px;
+}
+
+/* 로그인 박스 스타일 (앞쪽 연한 주황색 상자) */
+.login-container {
+    background-color: #ffc28c; /* 연한 주황색 */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    position: relative; /* 상대 위치 */
+    height: auto; /* 자동 높이 */
+    margin-top: 150px; /* 상단에 여백 추가 */
+}
+
+/* 제목 스타일 */
+h2 {
+    margin-top: 10px;
+    color: white;
+}
+
+/* 폼 스타일 */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 입력 필드 스타일 */
+.textbox input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.textbox > #id {
+    margin-left: 120px;
+}
+
+.textbox > #name {
+    margin-left: 100px;
+}
+
+.textbox > #confirmpw {
+    margin-left: 12px;
+}
+
+.textbox > #password {
+    margin-left: 45px;
+}
+
+.login {
+    margin-bottom: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+/* 버튼 스타일 */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* 왼쪽과 오른쪽에 버튼 배치 */
+    margin-top: 20px; /* 필요 시 여백 조절 */
+    justify-content: center;  /* 버튼들을 중앙 정렬 */
+    gap: 40px;                /* 버튼 사이 간격을 10px로 설정 */
+}
+
+/* 기존 .btn-login 정의에서 margin-left, display, margin-bottom 제거 */
+.btn-login {
+    background-color: #FF8C00; /* 주황색 */
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px;
+}
+
+/* 헤더 스타일 */
+header {
+    width: 100%;
+    background-color: #f8ac74; /* 헤더 배경 색상 */
+    padding: 10px 0;
+    position: absolute; /* 상단에 고정 */
+    top: 0;
+    left: 0;
+    z-index: 10; /* 로그인 박스보다 위에 */
+    text-align: center;
+}
+
+/* 로그인 박스 안에 입력 필드들 정렬 */
+.textbox {
+    text-align: left;
+    margin-left: 20px;
+}
+
+a:hover {
+    color: #f78d2f;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

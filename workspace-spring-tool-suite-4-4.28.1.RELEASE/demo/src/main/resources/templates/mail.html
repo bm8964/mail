@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メール作成</title>
+    <link rel="stylesheet" href="css/mail.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+
+	<div th:replace="header :: header"></div>
+
+    <div class="mail-write-container">
+        <!-- 상단 바 (목록으로 가기 버튼 & 검색) -->
+        <div class="top-bar">
+            <button class="back-to-list-btn" onclick="location.href='/sender'">項目へ</button>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="メール検索" class="search-bar">
+                <button class="search-btn">検索</button>
+            </div>
+        </div>
+
+        <!-- 메일 작성 컨텐츠 -->
+        <div class="mail-write">
+            <h1 class="mail-title">メール作成</h1>
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="subject">件名:</label>
+                    <input type="text" id="subject" name="subject" class="input-field" placeholder="件名を入力してください">
+                </div>
+                <div class="input-group">
+                    <label for="recipient">受信者:</label>
+                    <input type="email" id="recipient" name="recipient" class="input-field" placeholder="受信者のメールアドレスを入力してください">
+                </div>
+                <div class="input-group">
+                    <label for="content">内容:</label>
+                    <textarea id="content" name="content" class="input-field" placeholder="メールを作成してください"></textarea>
+                </div>
+                <div class="mail-actions">
+                    <button type="submit" class="send-btn">送信</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

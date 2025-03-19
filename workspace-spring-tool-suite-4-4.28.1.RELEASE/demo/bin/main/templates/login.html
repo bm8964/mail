@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ログイン</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <!-- 진한 주황색 배경 박스 -->
+    <div class="login-box-background"></div>
+
+    <!-- 연한 주황색 로그인 박스 -->
+    <div class="login-container">
+        <h2>ログイン</h2>
+        <form action="/mail/box" method="POST">
+            
+            <div class="textbox">
+                <a>ID</a>
+                <input type="text" id="user_Id" name="user_Id"  placeholder="ID" required>
+            </div>
+            
+            <div class="textbox">
+            <a>Password</a>
+                <input type="password" id="user_Password" name="user_Password" placeholder="Password" required>
+            </div>
+            
+            <div>
+               <a class="SignUp" href="/signup">会員登録の方はこちらに</a>
+            </div>
+            
+            <input class="btn-login" type="submit" value="ログイン">
+            
+            <a class="SignUp" href="/mailbox">ㅁ</a>
+        </form>
+    </div>
+</body>
+</html>
